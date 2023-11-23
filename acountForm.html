@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+</head>
+<body>
+    
+<h1>Create Account Form</h1>
+
+<form action="php">
+<fieldset>
+    <legend><h2>Personal Information</h2></legend>
+    <ul>
+        <li>
+<label for="fullName">Full Name:</label>
+<input type="text" name="name" id="fullName" placeholder="Enter Your full name" required maxlength="33" minlength="3">
+</li>
+<br />
+        
+        <li>
+<label for="dob">Date of Birth:</label>
+<input type="date" name="date" id="dob" required> 
+        </li> <br />
+        
+        <li>
+            <label for="soo">State of Origin:</label>
+            <select>
+<optgroup label="North">
+    <option value="kd">kaduna</option>
+    <option value="abj">abuja</option>
+    <option value="pl">plateau</option>
+    <option value="ng">niger</option>
+</optgroup>
+
+<optgroup label="East">
+    <option value="an">Anambra</option>
+    <option value="ab">Abia</option>
+    <option value="eng">Enugu</option>
+    <option value="eby" selected>Ebonyi</option>
+    <option value="im">Imo</option>
+</optgroup>
+
+
+<optgroup label="Sourth west">
+<option value="ek">ekiti</option>
+<option value="lg">Lagos</option>
+<option value="og">ogun</option>
+<option value="on">osun</option>
+<option value="oy">oyo</option>
+</optgroup>
+
+<optgroup label="North Central">
+    <option value="be">Benue</option>
+    <option value="kg">kogi</option>
+    <option value="kw">Kwara</option>
+    <option value="ns">Nasarawa</option>
+    </optgroup>
+
+    <optgroup label="Sourth Sourth">
+        <option value="aks">Akwa Ibom</option>
+        <option value="bys">Bayalsa</option>
+        <option value="cr">Cross River</option>
+        <option value="dl">Delta</option>
+        <option value="ed">Edo</option>
+        <option value="rv">Rivers</option>
+
+        </optgroup>
+
+            </select>
+        </li> <br />
+
+       <!-- <li>
+ <h3> marital status</h3> 
+<label for="ms">Marital Status:</label>
+<input type="radio" name="status" id="single">
+<label for="single">single</label> 
+
+<input type="radio" name="status" id="marriad">
+<label for="marriad">marriad</label>
+
+<input type="radio" name="status" id="divourced">
+<label for="divourced">Divourced</label>
+
+<input type="radio" name="status" id="widowed">
+<label for="widowed">widowed</label> <br />
+        </li> -->
+
+        <li>
+            <!-- <h3>religion</h3> -->
+            <label for="religion">Religion:</label>
+<label for="islam">Islam</label>
+<input type="radio" name="religion" id="islam">
+
+<label for="christain">christain</label>
+<input type="radio" name="religion" id="christain">
+
+<label for="omenala">omenala</label>
+<input type="radio" name="religion" id="omenala">
+
+        </li> <br />
+
+        <li>
+<!-- <h3>Gender</h3> -->
+<label for="gender">Gender:</label>
+<label for="male">male</label>
+<input type="radio" name="gender" id="male">
+
+<label for="female">female</label>
+<input type="radio" name="gender" id="female">
+        </li> <br />
+
+        <li>
+<!-- <h3>E-Mail</h3> -->
+<label for="email">E-Mail:</label>
+<input type="email" id="email" placeholder="Enter E-Mail" required >
+        </li> <br />
+
+        <li>
+<!-- <h3>Phone Number</h3> -->
+<label for="phone">Phone:</label>
+<input type="tel" id="phone" placeholder="Enter phone number" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}-[0-9]{4}" required>
+        </li> <br />
+
+        <li>
+<!-- <h3>Means of Identification</h3> -->
+
+<label for="dl">Driving Licence</label>
+<input type="radio" name="Identification" id="dl">
+<label for="vc">Voters Card</label>
+<input type="radio" name="Identification" id="vc">
+<label for="bvn">BVN</label>
+<input type="radio" name="Identification" id="bvn">
+
+
+
+<input type="file" id="file" accept="image">
+<br /> <br />
+</li>
+<br />
+
+<!-- MARITAL STATUS -->
+<li> 
+        <label for="id">Marital Status:</label>
+<select name="id" id="id">
+
+    <option value="single">Single</option>
+    <option value="married">Married</option>
+    <option value="divourced">Divourced</option>
+            
+        </li> <br />    
+    </ul>
+</fieldset> 
+
+<input type="submit">
+<input type="reset">
+</form>
+
+</body>
+</html>
